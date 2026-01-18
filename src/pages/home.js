@@ -17,7 +17,7 @@ const Home = () => {
 const fetchWeather = async() => {
     try{
     setLoading(true);
-    const response = await fetch(`https://weather-tracker-api-production.up.railway.app/aam/weather?city=${city}`);
+    const response = await fetch(`https://api.allorigins.win/raw?url=https://weather-tracker-api-production.up.railway.app/aam/weather?city=${city}`);
     if(!response.ok){
         throw new Error ("Failed to fetch weather data");
     }
